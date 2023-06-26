@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import Login from "../views/LoginView.vue"; //登录
 import Register from "../views/RegisterView.vue"; //注册
-import Home from "../views/HomeView.vue"; //首页
+import Home from "../views/MainView.vue"; //首页
 
 const routes = [
   {
@@ -22,15 +22,12 @@ const routes = [
     name: "Home",
     component: Home,
   },
-  {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
-  },
+
+  // route level code-splitting
+  // this generates a separate chunk (about.[hash].js) for this route
+  // which is lazy-loaded when the route is visited.
+  // component: () =>
+  //  import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
 
   //{
   //  path: "/Register",

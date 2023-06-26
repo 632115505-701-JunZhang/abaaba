@@ -1,5 +1,5 @@
 <template>
-  <div class="form">
+  <div class="login">
     <!-- 登录title-->
     <h2>
       <span>HRM</span>
@@ -11,7 +11,7 @@
     </div>
 
     <!--账号-->
-    <div class="form-item name">
+    <div class="login-item name">
       <input
         type="text"
         v-model="email"
@@ -22,7 +22,7 @@
     </div>
 
     <!--密码-->
-    <div class="form-item pwd">
+    <div class="login-item pwd">
       <input
         type="password"
         v-model="password"
@@ -33,12 +33,12 @@
     </div>
 
     <!--登录按钮-->
-    <div class="form-item login">
+    <div class="login-item login">
       <button @click="login">Login</button>
     </div>
 
     <!--注册-->
-    <div class="form-item register">
+    <div class="login-item register">
       <button @click="register">Register</button>
     </div>
 
@@ -50,7 +50,7 @@
 </template>
 
 <style>
-.form {
+.login {
   width: 500px;
   height: 540px;
   background: #fff;
@@ -74,7 +74,7 @@ h2 span {
   font-size: 700;
 }
 
-.form-item {
+.login-item {
   width: 400px;
   height: 42px;
   position: relative;
@@ -114,16 +114,16 @@ input::placeholder {
   border-radius: 0 0 5px 5px;
 }
 
-.form-item.login {
+.login-item.login {
   margin-top: 30px;
   border-radius: 5px;
 }
-.form-item.register {
+.login-item.register {
   margin-top: 10px;
   border-radius: 5px;
 }
 
-.form-item button {
+.login-item button {
   width: 101%;
   height: 101%;
   font-size: 18px;
